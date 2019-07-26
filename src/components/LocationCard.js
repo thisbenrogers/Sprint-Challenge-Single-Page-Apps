@@ -10,6 +10,6 @@ export default function LocationCard({ ...props }) {
     <Card
       header={name}
       description={`${type} - ${dimension}`}
-      meta={`${residents.length} residents`} />
+      extra={`${residents.length} residents`} />
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 
@@ -20,10 +21,10 @@ export default function CharacterCard({ ...props }) {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <Link to={`/episode/${id}`}>
           <Icon name='user' />
           Episodes
-        </a>
+        </Link>
       </Card.Content>
     </Card>
   )
